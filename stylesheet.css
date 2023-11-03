@@ -166,7 +166,7 @@ button.btn.first {
     flex-direction: row;
     border: 0px;
     column-gap: 4px;
-    align-items: baseline;
+    align-items: center;
 
 }
 .meaningBlockTitle {
