@@ -12,7 +12,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     font: normal 13px sans-serif;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 table thead th {
     background-color: #ffffff;
@@ -79,6 +80,7 @@ td.columnID {
     justify-content: center;
     column-gap: 16px;
     row-gap: 16px;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 743px) {
