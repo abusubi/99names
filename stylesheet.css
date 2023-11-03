@@ -90,9 +90,7 @@ td.columnID {
         width: 100%;
     }
     table {
-        min-width: 100%;
-        max-width: 700px;
-        width: 700px;
+        max-width: 100%;
     }
     section.allBlock {
         display: flex;
