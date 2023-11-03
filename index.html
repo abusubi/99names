@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lexend+Peta:wght@500;600&family=Playfair+Display:wght@400;500;600;700&family=Prompt:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="tableScript.js"></script>
+    <script type="text/javascript" src="filterScript.js"></script>
+    <script type="text/javascript" src="visibilityScript.js"></script>
+    <script type="text/javascript" src="meaningToggle.js"></script>
+</head>
+<body>
+
+<script> <!-- sets table filter to "All" -->
+window.onload = function () {
+    document.getElementById("page01Click").click();
+    $("#page01Click").trigger('click');
+}
+/* I think, archived code. Works fine without.
+document.addEventListener('DOMContentLoaded', function() {
+    function toggleVisibility(event) {
+        if (event.target.tagName === 'meaningClick') {
+            event.target.classList.toggle('hidden');
+        }
+    }
+    const table = document.querySelector('td'); // Adjust if necessary
+    table.addEventListener('click', toggleVisibility);
+});*/
+</script>
+
+<h1>The 99 Names</h1>
+<section class="allBlock"> <!-- start all tables block -->
+
+    <section id="myBtnContainer" class="filterButtons"> <!-- filter buttons -->
+            <button id="page01Click" class="btn first" onclick="filterSelection('page01')">Page 01</button>
+            <button class="btn" onclick="filterSelection('page02')">Page 02</button>
+            <button class="btn" onclick="filterSelection('page03')">Page 03</button>
+            <button class="btn" onclick="filterSelection('page04')">Page 04</button>
+            <button id="allClick" class="btn last" onclick="filterSelection('all')">All</button>
+    </section>
+
+<!-- Page 01 -->
+    <section class="tableBlock page01"> <!-- tables populated in this section -->
+
+    <!-- Table 1A -->
+    <table class="table1A">
+        <thead>
+            <tr>
+                <th>Names 1a</th>
+                <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="data-1A">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 1B -->
+    <table class="table1B">
+        <thead>
+        <tr>
+            <th>Names 1b</th>
+                <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>        </tr>
+        </thead>
+        <tbody id="data-1B">
+        <tr>
+            <!-- populated from javascript file -->
+        </tr>
+        </tbody>
+    </table>
+    </section>
+
+
+
+    <!-- Page 02 -->
+    <section class="tableBlock page02"> <!-- tables populated in this section -->
+
+        <!-- Table 2A -->
+        <table class="table2A">
+            <thead>
+            <tr>
+                <th>Names 2a</th>
+                    <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>            </tr>
+            </thead>
+            <tbody id="data-2A">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Table 2B -->
+        <table class="table2B">
+            <thead>
+            <tr>
+                <th>Names 2b</th>
+                    <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>            </tr>
+            </thead>
+            <tbody id="data-2B">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- Page 03 -->
+    <section class="tableBlock page03"> <!-- tables populated in this section -->
+
+        <!-- Table 3A -->
+        <table class="table3A">
+            <thead>
+            <tr>
+                <th>Names 3a</th>
+                    <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>            </tr>
+            </thead>
+            <tbody id="data-3A">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Table 3B -->
+        <table class="table3B">
+            <thead>
+            <tr>
+                <th>Names 3b</th>
+                    <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>            </tr>
+            </thead>
+            <tbody id="data-3B">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Page 04 -->
+    <section class="tableBlock page04"> <!-- tables populated in this section -->
+
+        <!-- Table 4A -->
+        <table class="table4A">
+            <thead>
+            <tr>
+                <th>Names 4a</th>
+                    <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>            </tr>
+            </thead>
+            <tbody id="data-4A">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Table 4B -->
+        <table class="table4B">
+            <thead>
+            <tr>
+                <th>Names 4b</th>
+                    <th class="meaningBlock">
+                    <span class="meaningBlockTitle">Meaning</span>
+                    <button class="meaningBlockShow">Show</button>
+                    <button class="meaningBlockHide">Hide</button>
+                </th>            </tr>
+            </thead>
+            <tbody id="data-4B">
+            <tr>
+                <!-- populated from javascript file -->
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</section>
+
+</body>
+</html>
