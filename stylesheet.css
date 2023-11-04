@@ -33,11 +33,12 @@ table tbody td {
 }
 h1 {
     text-align: center;
-    margin-bottom: 16px;
-    font-family: 'Prompt', sans-serif;
+    margin-bottom: 8px;
+    font-family: 'lexend peta', sans-serif;
     font-weight: 800;
     text-rendering: geometricPrecision;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    letter-spacing: -5px;
 }
 td.name99 {
     font-family: 'Amiri', sans-serif;
