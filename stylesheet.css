@@ -122,12 +122,12 @@ section.filterButtons {
 
 /* Style the buttons */
 .btn {
-    border: none;
-    outline: none;
+    border: 4px solid white;
     padding: 12px 16px;
-    background-color: #f1f1f1;
+    background-color: #e9e9e9;
     cursor: pointer;
     font-family: 'Prompt', sans-serif;
+    font-weight: 500;
     text-rendering: geometricPrecision;
 }
 
